@@ -8,9 +8,9 @@ var Fish = Backbone.Model.extend({
     description: 'Regular old fish',
     displayInfo: false
   },
-  toggleDescription:function () {
+  
+  toggleDescription:function (){
+  this.set("displayInfo",!this.get('displayInfo'))
 
-    this.defaults.displayInfo=true
-    this.model.initialize();
     }
 });
